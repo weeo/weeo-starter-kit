@@ -82,20 +82,8 @@ gulp.task('stylus', function() {
     .pipe(gulpif(isDevelopment, connect.reload()));
 });
 
-gulp.task('babel', () => {
-  return gulp.src('src/js/**/*.js')
-    .pipe(plumber())
-    .pipe(babel({
-      presets: ['es2015'],
-      minified: true,
-      comments: false
-    }))
-    .pipe(gulp.dest('./public/js/'))
-    .pipe(gulpif(isDevelopment, connect.reload()));
-});
-
 gulp.task('webpack', function () {
-  return gulp.src(['./src/js/**/*.ts'])
+  return gulp.src(['./src/_js/**/*.ts'])
     .pipe(webpack(webpackConfig))
     .pipe(gulp.dest('./public/js/'))
     .pipe(gulpif(isDevelopment, connect.reload()));
@@ -120,9 +108,8 @@ gulp.task('watch', function() {
   gulp.watch('./src/**/*.pug', ['pug']);
   // gulp.watch('./src/**/*.md', ['pug']);
   gulp.watch('./src/_styl/**/*.styl', ['stylus']);
-  // gulp.watch('./src/js/**/*.js', ['babel']);
-  gulp.watch('./src/js/**/*.vue', ['webpack']);
-  gulp.watch('./src/js/**/*.js', ['webpack']);
+  gulp.watch('./src/_js/**/*.vue', ['webpack']);
+  gulp.watch('./src/_js/**/*.js', ['webpack']);
   // gulp.watch('./src/_img/**/*.[png|jpg|gif]', ['img']);
   return;
 });
@@ -131,7 +118,6 @@ gulp.task('build', ['clean'], function() {
   return gulp.start([
     'pug',
     'stylus',
-    // 'babel',
     'webpack',
     'img'
   ]);

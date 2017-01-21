@@ -1,13 +1,11 @@
 import Vue from 'vue'
-import Company from './app/Company'
+import App from './app/Top'
 
 // for debugging
 if (process.env.NODE_ENV !== 'production') Vue.config.debug = true
 
 new Vue({
   el: '#app',
-  render: h => h(Company)
+  render: h => h(App)
 })
-
-console.log('this is Company page');
 

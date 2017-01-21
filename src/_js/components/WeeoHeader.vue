@@ -1,12 +1,9 @@
 <template>
   <div>
     <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-      <li>6</li>
+      <li><a href="/">top</a></li>
+      <li><a href="/about">about</a></li>
+      <li><a href="/company">company</a></li>
     </ul>
   </div>
 </template>

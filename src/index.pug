@@ -1,17 +1,14 @@
 extends /_layout
 
+include _pug/_settings
+
 append var
-  - metas.title = 'title'
-  - metas.url = 'url'
-  - metas.image = 'image'
-  - metas.site_name = 'site_name'
+  - metas.title = 'top'
   - metas.description = 'description'
-  - metas.robots = 'index'
-  - uri.folder = 'zawazawa/'
-  - googleAnalyticsTrackingCode = 'UA-XXXXXXXX-Y'
+  - uri.folder = ''
 
 append link
-  link(rel='stylesheet', href="/css/weeo.css")
+  //- link(rel='stylesheet', href="/css/weeo.css")
   //- link(rel='stylesheet', href="style.css")
   //- link(rel='stylesheet', href="/lib/materialize.css")
   //- link(rel='stylesheet', href="/components/slick-carousel/slick/slick.css")
@@ -19,8 +16,5 @@ append link
 block content
   #app
 
-block foot
-
 append body_end
-  script(src="/js/commons.js")
   script(src="/js/top.js")

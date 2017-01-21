@@ -29,11 +29,11 @@ const builds = {
 
 function genConfig (opts) {
   const config = {
-    context: path.join(__dirname, '/src'),
+    context: path.join(__dirname, '/src/_js'),
     entry: {
-      top: './js/top.js',
-      about: './js/about.js',
-      company: './js/company.js'
+      top: './top.js',
+      about: './about.js',
+      company: './company.js'
     },
     output: {
       path: path.join(__dirname, 'public'),
