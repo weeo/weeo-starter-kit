@@ -1,0 +1,26 @@
+extends /_layout
+
+append var
+  - metas.title = 'title'
+  - metas.url = 'url'
+  - metas.image = 'image'
+  - metas.site_name = 'site_name'
+  - metas.description = 'description'
+  - metas.robots = 'index'
+  - uri.folder = 'zawazawa/'
+  - googleAnalyticsTrackingCode = 'UA-XXXXXXXX-Y'
+
+append link
+  link(rel='stylesheet', href="/css/weeo.css")
+  //- link(rel='stylesheet', href="style.css")
+  //- link(rel='stylesheet', href="/lib/materialize.css")
+  //- link(rel='stylesheet', href="/components/slick-carousel/slick/slick.css")
+
+block content
+  #app
+
+block foot
+
+append body_end
+  script(src="/js/commons.js")
+  script(src="/js/top.js")

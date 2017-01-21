@@ -1,0 +1,5 @@
+[build]
+  publish = "public"
+
+[context.master]
+  command = "npm run build:production"

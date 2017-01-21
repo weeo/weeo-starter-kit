@@ -1,0 +1,23 @@
+extends /_layout
+
+append var
+  - metas.title = 'title'
+  - metas.url = 'url'
+  - metas.image = 'image'
+  - metas.site_name = 'site_name'
+  - metas.description = 'description'
+  - metas.robots = 'index'
+  - uri.folder = 'zawazawa/'
+  - googleAnalyticsTrackingCode = 'UA-XXXXXXXX-Y'
+
+append link
+  //- link(rel='stylesheet', href="style.css")
+
+block content
+  #app
+
+block foot
+
+append body_end
+  script(src="/js/commons.js")
+  script(src="/js/company.js")

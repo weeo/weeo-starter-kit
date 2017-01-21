@@ -1,0 +1,66 @@
+{
+  "name": "weeo-starter-kit",
+  "version": "0.0.0",
+  "description": "weeo starter kit",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "gulp serve",
+    "watch": "gulp",
+    "build": "gulp build",
+    "build:pro": "gulp build --env production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weeo/weeo-starter-kit.git"
+  },
+  "author": "Akiho Nagao <akiho.nagao@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weeo/weeo-starter-kit/issues"
+  },
+  "homepage": "https://github.com/weeo/weeo-starter-kit#readme",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-runtime": "^6.18.0",
+    "bootstrap-styl": "^5.0.8",
+    "css-loader": "^0.26.1",
+    "eslint": "^3.12.2",
+    "eslint-config-google": "^0.7.1",
+    "eslint-config-vue": "^2.0.1",
+    "eslint-plugin-vue": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-connect": "^5.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-remove-empty-lines": "0.0.8",
+    "gulp-sass": "^3.1.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-webpack": "^1.5.0",
+    "jstransformer-markdown": "^1.1.1",
+    "jstransformer-stylus": "^1.3.0",
+    "minimist": "^1.2.0",
+    "rimraf": "^2.5.4",
+    "stylus-loader": "^2.4.0",
+    "vue-loader": "^10.0.2",
+    "vue-template-compiler": "^2.1.10",
+    "webpack-stream": "^3.2.0",
+    "weeo": "0.0.2"
+  },
+  "dependencies": {
+    "bower": "^1.8.0",
+    "vue": "^2.1.10",
+    "vue-waterfall": "^1.0.5"
+  }
+}
